@@ -1,5 +1,5 @@
 <?php
-add_action('init', 'portfolio_register');
+add_action('init', 'portfolio_register', 0);
 add_action('admin_enqueue_scripts', 'enqueue_date_picker');
 
 function enqueue_date_picker() {

@@ -1,0 +1,11 @@
+#registerform{
+    label{
+        display: inline-block;
+        width: 120px;
+    }
+}
+#bid_area{
+    & > li{
+        display: none;
+    }
+}

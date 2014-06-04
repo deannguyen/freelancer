@@ -80,15 +80,16 @@ class Freelancer {
         //require_once( FREELANCER_DIR . 'includes/settings.php' );
         //require_once( FREELANCER_DIR . 'includes/post-types.php' );
         //require_once( FREELANCER_DIR . 'includes/taxonomies.php' );
-        //require_once( FREELANCER_DIR . 'includes/user-meta.php' );
+        require_once( FREELANCER_DIR . 'includes/user.php' );
         //require_once( FREELANCER_DIR . 'includes/post-meta.php' );
-        //require_once( FREELANCER_DIR . 'includes/template.php' );
+        require_once( FREELANCER_DIR . 'includes/template.php' );
         require_once( FREELANCER_DIR . 'includes/misc.php' );
-
+        
         /* Include admin files. */
+        require_once( FREELANCER_DIR . 'admin/admin.php' );
         if (is_admin()) {
             // include admin files
-            require_once( FREELANCER_DIR . 'admin/admin.php' );
+            
             require_once( FREELANCER_DIR . 'admin/settings.php' );
             //require_once( FREELANCER_DIR . 'admin/users.php' );
         }
